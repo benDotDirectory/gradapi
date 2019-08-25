@@ -30,10 +30,15 @@ Note:
 - Gradient colors are randomly generated and each API call returns from 2-5 colors
 
 GET ```/api/v1/generate_linear_gradient```
+
 Example response: ```{"angle":"333deg","colors":["#10a89d","#2817b8"]}```
 
+
 GET ```/api/v1/generate_transparent_gradient```
+
 Example response: ```{"angle":"232deg","colors":["rgba(60,57,45,0.9)","rgba(110,105,219,0.7)","rgba(179,98,207,0.9)","rgba(244,113,123,0.8)","rgba(107,114,154,0.1)"]}```
 
+
 GET ```/generate_radial_gradient```
+
 Example response: ```{"shape":"circle","size":"farthest-corner","colors":["#d79416","#87dd8d"]}```
