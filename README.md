@@ -45,3 +45,10 @@ Example response:
 Example response:
 
 ```{"shape":"circle","size":"farthest-corner","colors":["#d79416","#87dd8d"]}```
+
+## TODO
+1. Authentication
+2. JSON output formatting?
+3. Clean up code
+4. Configuration file
+5. Refactor file names
