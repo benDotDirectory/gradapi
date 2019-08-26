@@ -9,7 +9,7 @@ This is the first API/API server I've developed. It generates JSON responses wit
 
 ## Install
 ```
-git clone https://github.com/bendotbike/gradapi gradapi
+git clone https://github.com/bendotbike/gradapi.git gradapi
 cd gradapi
 npm install
 ```
