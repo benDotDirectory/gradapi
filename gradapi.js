@@ -97,7 +97,7 @@ module.exports = {
                 gradient.colors = [generateHex(), generateHex(), generateHex()];
                 break;
             case 4:
-                gradent.colors = [generateHex(), generateHex(), generateHex(), generateHex()];
+                gradient.colors = [generateHex(), generateHex(), generateHex(), generateHex()];
                 break;
             case 5:
                 gradient.colors = [generateHex(), generateHex(), generateHex(), generateHex(), generateHex()];
