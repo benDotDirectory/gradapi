@@ -114,9 +114,11 @@ module.exports = {
 
 // Generate a valid hex color code
 function generateHex() {
-    var hex = "#";
-    while (hex.length !== 7) {
+    var hex = "";
+    while (hex.length != 7) {
+        console.log("hex wasn't valid - regenerating...");
         hex = "#" + (Math.random()*0xFFFFFF<<0).toString(16); // some odd bug makes our hexo 5 digits (6 if you count the #)
+   
     }
     return hex;
 }
