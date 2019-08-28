@@ -114,7 +114,7 @@ module.exports = {
 
 // Generate a valid hex color code
 function generateHex() {
-    return "#" + Math.floor(Math.random() * 16777215).toString(16); // Thank you, https://css-tricks.com/snippets/javascript/random-hex-color/
+    return "#" + (Math.random()*0xFFFFFF<<0).toString(16);
 }
 
 // Generates a valid RGBA color code
