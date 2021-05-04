@@ -15,13 +15,18 @@ npm install
 ```
 
 ## Start
-```node .```
+```npm start```
 
 ## Configure
-All configuration is done in ```index.js``` (@TODO: make seperate config file).
-The environment variable ```production``` can be set to ```1``` to enable production-mode, which controls logging and rate-limiting. Enable dev mode (set ```production``` to ```0```) for a test ```index.html``` page to be displayed at ```/```.
+Create a ```.env``` file in the directory, with the following contents
+```
+production=0 #Enable (set to 1  for console logging and 'api-server/index.html' test page
+port=3000 # Port for express server
+hits_per_hr=100 # Rate limiter
+```
 
-This server uses [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) to rate limit requests. Very basic, as this is designed to be a public API (no authentication). Configure it in ```index.js``` as well.
+
+This server uses [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) to rate limit requests. 
 
 ## Usage
 Note:
@@ -46,9 +51,4 @@ Example response:
 
 ```{"shape":"circle","size":"farthest-corner","colors":["#d79416","#87dd8d"]}```
 
-## TODO
-1. Authentication
-2. JSON output formatting?
-3. Clean up code
-4. Configuration file
-5. Refactor file names
+
