@@ -10,7 +10,7 @@
 */
 
 // IF PRODUCTION, 1
-var production = process.env.port || 1;
+var productionEnabled = process.env.port || 0; // Production off by default
 
 const express = require("express");
 const path = require("path");
@@ -34,7 +34,7 @@ const logger = winston.createLogger({
 *   Dev/production-specific code
 */
 //  Display reminder if dev mode
-if (process.env.production == 0) {
+if (productionEnabled) {
 
     // Set winston to log to console
     logger.add(new winston.transports.Console());
