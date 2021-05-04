@@ -1,6 +1,8 @@
 /*
-    Generates gradients
- */
+*   gradapi.js   
+*   ----------
+*   API logic responsinble for generating the gradients.
+*/
 
 module.exports = {
 
@@ -130,7 +132,7 @@ function generateRGBA() {
 
 /*
     Utility functions
- */
+*/
 
 // Utility function to generate random numbers between integers X - Y
 function generateRandomNumber(min, max) {
