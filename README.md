@@ -7,13 +7,10 @@ This API generates JSON responses with values to create gradients in CSS.
 
 ## Install
 ```
-$ git clone https://github.com/benDotDirectory/gradapi.git gradapi
-$ cd gradapi
+$ git clone https://github.com/benDotDirectory/gradapi.git ~/gradapi
+$ cd ~/gradapi
 $ npm install
 ```
-
-## Start
-```$ npm start```
 
 ## Configure
 Create a ```.env``` file in the directory, with the following contents
@@ -23,10 +20,17 @@ port=3000 # Port for express server
 hits_per_hr=100 # Rate limiter
 ```
 
-
 This server uses [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) to rate limit requests. 
 
 ## Usage
+You can start the server with ```npm start``` but I'd recommend running it with [pm2](https://pm2.keymetrics.io/)
+```
+$ npm install pm2 -g
+$ pm2 start ~/gradapi/index.js --name "gradapi-server"
+```
+
+
+## Endpoints
 Note:
 - All API calls reside under ```/api/v1/```.
 - All API calls return JSON with values to insert into CSS to create a gradient
