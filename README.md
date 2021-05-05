@@ -15,7 +15,7 @@ $ npm install
 ## Configure
 Create a ```.env``` file in the directory, with the following contents
 ```
-production=0 #Enable (set to 1  for console logging and 'api-server/index.html' test page
+production=0 #Enable (set to 0 for console logging and 'api-server/index.html' test page
 port=3000 # Port for express server
 hits_per_hr=100 # Rate limiter
 ```
