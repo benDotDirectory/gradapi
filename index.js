@@ -9,9 +9,6 @@
 *   Imports & config
 */
 
-// IF PRODUCTION, 1
-var productionEnabled = process.env.port || 0; // Production off by default
-
 const express = require("express");
 const path = require("path");
 const rateLimit = require("express-rate-limit");
@@ -28,6 +25,10 @@ const logger = winston.createLogger({
     ],
     exitOnError: false
 });
+
+
+// IF PRODUCTION, 1
+var productionEnabled = process.env.production || 0; // Production off by default
 
 
 /*
