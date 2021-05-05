@@ -9,13 +9,13 @@ This is the first API/API server I've developed. It generates JSON responses wit
 
 ## Install
 ```
-git clone https://github.com/bendotbike/gradapi.git gradapi
-cd gradapi
-npm install
+$ git clone https://github.com/benDotDirectory/gradapi.git gradapi
+$ cd gradapi
+$ npm install
 ```
 
 ## Start
-```npm start```
+```$ npm start```
 
 ## Configure
 Create a ```.env``` file in the directory, with the following contents
