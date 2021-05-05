@@ -1,11 +1,9 @@
 
 # gradapi
-Basic homemade API to generate CSS gradients - gradapi: "Gradient API"
+Homemade API designed to generate CSS gradients
 
 ## About
-This is the first API/API server I've developed. It generates JSON responses with values to create gradients in CSS. This project is experimental and not intended for professional applications. This respository contains:
-- ```gradapi.js``` - generates the gradients
-- ```index.js``` - express server to handle API requests
+This API generates JSON responses with values to create gradients in CSS. 
 
 ## Install
 ```
